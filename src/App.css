@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf'), local('SpaceGrotesk'), format('truetype');
+
+}
+@font-face {
+    font-family: 'WorkSans';
+    src: url('/src/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf'), local('WorkSan'), format('truetype');
+
+}
+@font-face {
+    font-family: 'CastoroTitling';
+    src: url('/src/assets/fonts/CastoroTitling/CastoroTitling-Regular.ttf'), local('CastoroTitiling'), format('truetype');
+
+}
+header ul li {
+    @apply px-5;
+    
+}
+.bg-primary{
+    background-color: white;
+}   
+.text-header{
+    color: rgba(109, 57, 193, 1);
+    font-size: 23px;
+}
+.mobile-nav{
+    @apply absolute z-10 left-0 mt-3 right-0 w-full h-80 ;
+    top:65px;
+    padding : 20px;
+    background: rgba(250, 192, 94, 1);
+
+}
+.mobile-nav li{
+    @apply w-full h-full  border-black text-center py-5;
+}
+.bg-for-Body{
+    background-color: rgba(109, 57, 193, 1);
+    color: white;
+}
+.color-type1{
+    color: rgba(250, 192, 94, 1);
+}
+.bg-secondcolor{
+    background-color: rgba(250, 192, 94, 1);
+}
+.typing-fx span{
+    position: relative;
+}
+.typing-fx span::before{
+    content: "I'm a Web Developer";
+    animation: words 10s infinite;
+
+}
+.typing-fx span::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid  rgba(250, 192, 94, 1);
+    right:-8px;
+    animation: cursor .8s infinite ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes cursor {
+    to{
+        border-left:2px solid  rgb(0, 0, 0) ;
+    }
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes words {
+    0%,20%{
+        content: "I'm a Web Designer";
+    }
+    21%,40%{
+        content: "I'm a Student";
+    }
+}
+.volite-color-text{
+        color: rgba(109, 57, 193, 1);
+}
+.project-color{
+    background: rgba(63, 167, 214, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
