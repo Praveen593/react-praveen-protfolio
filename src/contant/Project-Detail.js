@@ -13,7 +13,7 @@ export const PROJECT_LIST = [
     {
         liveDemo:"",
         title: "API integration",
-        image: project2,
+        image: project2, 
         description: "In Progress",
         technologies : ["nodejs " ,"reactjs ","mongo db" ],
         github: "https://github.com/Praveen593"
