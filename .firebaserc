@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "praveen-luci",
+    "hosting": "praveen-luci"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
